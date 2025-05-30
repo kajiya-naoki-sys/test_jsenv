@@ -1,0 +1,9 @@
+services:
+  src:
+    build: .
+    container_name: ubuntu-node
+    volumes:
+      - ./src:/src
+    ports:
+      - "3000:3000"
+    tty: true
